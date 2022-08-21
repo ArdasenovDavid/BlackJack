@@ -1,0 +1,97 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	
+	background-color: green;
+}
+
+.cards {
+
+}
+
+.card {
+
+	transform: rotateZ(90deg);
+	perspective: 1000px;
+	position: absolute;
+	right: 100px;
+	width: 200px;
+	height: 290px;
+
+	
+}
+
+
+.card > .front,
+.card > .back {
+	border: 1px solid black;
+	transition: .6s ease;
+	backface-visibility: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 8px;
+}
+
+.front {
+	transform: rotateY(180deg);
+	background-color: wheat;
+}
+.back {
+	/*transform: rotateY(180deg);*/
+	background: url('img/shirt.jpg');
+}
+
+/*.card:hover .front {
+	transform: rotateY(360deg);
+}
+.card:hover .back {
+	transform: rotateY(180deg);
+}*/
+.contain {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.button {
+	font-size: 20px;
+	margin: 10px;
+	border: 1px solid black;
+	background-color: darkgoldenrod;
+	border-radius: 8px;
+	/*position: absolute;*/
+	width: 200px;
+	height: 50px;
+	top: 500px;
+}
+
+
+.addd {
+	display: none;
+}
+
+.score {
+
+	color: white;
+	font-family: sans-serif;
+	font-size: 56px;
+	position: absolute;
+	top: 40%;
+	left: 35%;
+
+}
+
+.money {
+	position: absolute;
+	bottom: 20px;
+	left: 100px;
+	font-size: 56px;
+	
+	font-family: sans-serif;
+}
